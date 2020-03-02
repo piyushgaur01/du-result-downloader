@@ -1,0 +1,18 @@
+{
+  "name": "du-result-download",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^4.1.0",
+    "puppeteer": "^2.1.1",
+    "puppeteer-core": "^2.1.1",
+    "tabletojson": "^1.2.0"
+  }
+}
