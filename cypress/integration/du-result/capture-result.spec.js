@@ -2,7 +2,8 @@
 const tabletojson = require('tabletojson');
 const fs = require('fs');
 
-const RESULT_WEBSITE = 'https://duresult.in/students/Combine_GradeCard.aspx';
+// const RESULT_WEBSITE = 'https://duresult.in/students/Combine_GradeCard.aspx';
+const RESULT_WEBSITE = 'http://rslt.duresult.in/students/Combine_GradeCard.aspx';
 const startRoll = 19109827001;
 const rollNumbers = [];
 const maxResults = 149;
@@ -34,7 +35,7 @@ describe('Check Result', () => {
               result: tablesAsJson
             });
             cy.screenshot(rollNo.toString());
-            cy.writeFile('./complete-result.json', completeResult);
+            cy.writeFile('./sem2-complete-result.json', completeResult);
           });
         });
       });
