@@ -1,15 +1,11 @@
 /// <reference types="cypress" />
 const tabletojson = require('tabletojson');
+const rollNumbers = require('./roll-numbers');
 const fs = require('fs');
 
 // const RESULT_WEBSITE = 'https://duresult.in/students/Combine_GradeCard.aspx';
-const RESULT_WEBSITE = 'http://rslt.duresult.in/students/Combine_GradeCard.aspx';
-const startRoll = 19109827001;
-const rollNumbers = [];
-const maxResults = 149;
-for (let index = 0; index <= maxResults; index++) {
-  rollNumbers.push(startRoll + index);
-}
+const RESULT_WEBSITE = 'http://durslt.du.ac.in/DURSLT_ND2020/Students/Combine_GradeCard.aspx';
+// const RESULT_WEBSITE = 'http://durslt.du.ac.in/DURSLT_MJ2020/Students/Combine_GradeCard.aspx';
 
 const completeResult = [];
 
@@ -34,8 +30,8 @@ describe('Check Result', () => {
               name,
               result: tablesAsJson
             });
-            cy.screenshot(rollNo.toString());
-            cy.writeFile('./sem2-complete-result.json', completeResult);
+            // cy.screenshot(rollNo.toString());
+            cy.writeFile('./sem3-complete-result.json', completeResult);
           });
         });
       });

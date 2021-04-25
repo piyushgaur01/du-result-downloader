@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 
-const RESULT_WEBSITE = 'https://duresult.in/students/Combine_GradeCard.aspx';
+const RESULT_WEBSITE = 'http://durslt.du.ac.in/DURSLT_MJ2020/Students/Combine_GradeCard.aspx';
+//'https://duresult.in/students/Combine_GradeCard.aspx';
 
 (async () => {
   const browser = await puppeteer.launch();
